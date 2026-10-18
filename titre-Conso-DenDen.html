@@ -2,9 +2,129 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>La conommation a denden</title>
+    <title>La consommation à DenDen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #004a99; /* Bleu STEG */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #004a99;
+            color: white;
+        }
+        .total-row {
+            font-weight: bold;
+            background-color: #e6f2ff;
+        }
+        .highlight {
+            background-color: #ffeb3b; /* Le surlignage jaune de votre diapositive */
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <p>Bonjour</p>
+
+    <h1>Consommation - Zone DenDen</h1>
+    <p>Relevé de la consommation pour les mois de Juillet et Août :</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Maisons / Société</th>
+                <th>Consommation Juillet (kWh)</th>
+                <th>Consommation Août (kWh)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maison 1</td>
+                <td>150</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>Maison 2</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Maison 3</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Maison 4</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Maison 5</td>
+                <td>150</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>Maison 6</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Maison 7</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Maison 8</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Maison 9</td>
+                <td>100</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Maison 10</td>
+                <td>150</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>Office National de l'artisanat</td>
+                <td>950</td>
+                <td>950</td>
+            </tr>
+            <!-- Ligne Total calculée -->
+            <tr class="total-row">
+                <td>Total</td>
+                <td>2000</td>
+                <td>1900</td>
+            </tr>
+            <!-- Ligne Compteur DenDen -->
+            <tr>
+                <td>Compteur DenDen (Réel)</td>
+                <td class="highlight">2000</td>
+                <td class="highlight">2000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p style="margin-top: 20px; color: red; font-weight: bold;">
+        Constat : Le compteur DenDen affiche 2000 en Août, alors que le total facturé est de 1900 ! (Fraude suspectée)
+    </p>
+
 </body>
 </html>
